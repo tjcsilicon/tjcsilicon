@@ -51,3 +51,9 @@ CPTS323:
 CPTS355:
 
 CPTS360:
+
+CPTS427:
+
+  MD5 Salt Decryption:
+    A program that searches a password file and brute forces a specified line to find the salt.
+    This isn't very efficient, but most brute force programs aren't. TO DO: ALLOW FOR USER INPUT.
