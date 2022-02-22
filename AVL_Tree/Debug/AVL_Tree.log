@@ -1,0 +1,57 @@
+﻿  Main.cpp
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\AVL_Tree.h(112,8): warning C4101: 'parent': unreferenced local variable
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\AVL_Tree.h(109): message : while compiling class template member function 'void BinaryTree<int>::insert(T)'
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\Main.cpp(26): message : see reference to function template instantiation 'void BinaryTree<int>::insert(T)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\Main.cpp(23): message : see reference to class template instantiation 'BinaryTree<int>' being compiled
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\AVL_Tree.h(500,8): warning C4101: 'parent': unreferenced local variable
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\AVL_Tree.h(498): message : while compiling class template member function 'void BinaryTree<int>::rebalencedelete(BinaryTree<int>::node *,T)'
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\AVL_Tree.h(278): message : see reference to function template instantiation 'void BinaryTree<int>::rebalencedelete(BinaryTree<int>::node *,T)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\AVL_Tree.h(109): message : while compiling class template member function 'void BinaryTree<int>::insert(T)'
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\Main.cpp(26): message : see reference to function template instantiation 'void BinaryTree<int>::insert(T)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\AVL_Tree.h(426,8): warning C4101: 'parent': unreferenced local variable
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\AVL_Tree.h(424): message : while compiling class template member function 'BinaryTree<int>::node *BinaryTree<int>::checkBF(T)'
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\AVL_Tree.h(444): message : see reference to function template instantiation 'BinaryTree<int>::node *BinaryTree<int>::checkBF(T)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\AVL_Tree.h(68): message : while compiling class template member function 'BinaryTree<int>::node *BinaryTree<int>::findNode(T)'
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\AVL_Tree.h(172): message : see reference to function template instantiation 'BinaryTree<int>::node *BinaryTree<int>::findNode(T)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\AVL_Tree\AVL_Tree\AVL_Tree.h(37): warning C4715: 'BinaryTree<int>::node::reportHeight': not all control paths return a value
+  AVL_Tree.vcxproj -> C:\Users\timca\source\repos\AVL_Tree\Debug\AVL_Tree.exe

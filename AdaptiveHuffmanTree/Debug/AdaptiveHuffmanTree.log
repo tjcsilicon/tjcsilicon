@@ -1,0 +1,11 @@
+﻿  exceptions.cpp
+  main.cpp
+C:\Users\timca\source\repos\AdaptiveHuffmanTree\AdaptiveHuffmanTree\HuffmanTree.h(74,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\timca\source\repos\AdaptiveHuffmanTree\AdaptiveHuffmanTree\HuffmanTree.h(270,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\timca\source\repos\AdaptiveHuffmanTree\AdaptiveHuffmanTree\HuffmanTree.h(292,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\timca\source\repos\AdaptiveHuffmanTree\AdaptiveHuffmanTree\HuffmanTree.h(319,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\timca\source\repos\AdaptiveHuffmanTree\AdaptiveHuffmanTree\HuffmanTree.h(342,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\timca\source\repos\AdaptiveHuffmanTree\AdaptiveHuffmanTree\HuffmanTree.h(224,12): warning C4101: 'toRoot': unreferenced local variable
+C:\Users\timca\source\repos\AdaptiveHuffmanTree\AdaptiveHuffmanTree\main.cpp(32,23): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  AdaptiveHuffmanTree.vcxproj -> C:\Users\timca\source\repos\AdaptiveHuffmanTree\Debug\AdaptiveHuffmanTree.exe

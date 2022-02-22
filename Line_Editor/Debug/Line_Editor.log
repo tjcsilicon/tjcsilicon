@@ -1,0 +1,5 @@
+﻿  exceptions.cpp
+  Line_Editor.cpp
+  Generating Code...
+C:\Users\timca\source\repos\Line_Editor\Line_Editor\operators.h(27): warning C4715: 'compare<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >': not all control paths return a value
+  Line_Editor.vcxproj -> C:\Users\timca\source\repos\Line_Editor\Debug\Line_Editor.exe

@@ -1,0 +1,86 @@
+﻿  Main.cpp
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(79,27): warning C4018: '>': signed/unsigned mismatch
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(62): message : while compiling class template member function 'void BTree<int>::insert(T)'
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\B-Tree\B-Tree\Main.cpp(28): message : see reference to function template instantiation 'void BTree<int>::insert(T)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\B-Tree\B-Tree\Main.cpp(24): message : see reference to class template instantiation 'BTree<int>' being compiled
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(108,27): warning C4018: '>': signed/unsigned mismatch
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(211,27): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(201): message : while compiling class template member function 'void BTree<int>::remove(T)'
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\B-Tree\B-Tree\Main.cpp(38): message : see reference to function template instantiation 'void BTree<int>::remove(T)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(223,42): warning C4018: '<': signed/unsigned mismatch
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(239,29): warning C4018: '<': signed/unsigned mismatch
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(248,27): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(184,25): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(133): message : while compiling class template member function 'void BTree<int>::overflow(node<T> *)'
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(87): message : see reference to function template instantiation 'void BTree<int>::overflow(node<T> *)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(62): message : while compiling class template member function 'void BTree<int>::insert(T)'
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\B-Tree\B-Tree\Main.cpp(28): message : see reference to function template instantiation 'void BTree<int>::insert(T)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(193,24): warning C4018: '>': signed/unsigned mismatch
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(287,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(264): message : while compiling class template member function 'void BTree<int>::underflow(node<T> *)'
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(225): message : see reference to function template instantiation 'void BTree<int>::underflow(node<T> *)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(305,40): warning C4018: '>': signed/unsigned mismatch
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(312,45): warning C4018: '>': signed/unsigned mismatch
+C:\Users\timca\source\repos\B-Tree\B-Tree\Node.h(77,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\timca\source\repos\B-Tree\B-Tree\Node.h(69): message : while compiling class template member function 'void node<T>::insert(T)'
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(70): message : see reference to function template instantiation 'void node<T>::insert(T)' being compiled
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\B-Tree\B-Tree\Node.h(112,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\timca\source\repos\B-Tree\B-Tree\Node.h(102): message : while compiling class template member function 'void node<T>::remove(T)'
+          with
+          [
+              T=int
+          ]
+C:\Users\timca\source\repos\B-Tree\B-Tree\B-Tree.h(221): message : see reference to function template instantiation 'void node<T>::remove(T)' being compiled
+          with
+          [
+              T=int
+          ]
+  B-Tree.vcxproj -> C:\Users\timca\source\repos\B-Tree\Debug\B-Tree.exe
