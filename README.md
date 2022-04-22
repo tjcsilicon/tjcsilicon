@@ -51,9 +51,12 @@ CPTS323:
 CPTS355:
 
 CPTS360:
+  Examples of System Programming. This folder contains examples of my system programming experience. They showcase my ability to create programs that interface with the internal system files.
 
 CPTS427:
 
   MD5 Salt Decryption:
     A program that searches a password file and brute forces a specified line to find the salt.
     This isn't very efficient, but most brute force programs aren't. TO DO: ALLOW FOR USER INPUT.
+  Cryptography:
+    A program that uses cryptography to analyze an encrypted message and decrypt it.
