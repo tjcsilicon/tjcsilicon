@@ -60,3 +60,4 @@ CPTS427:
     This isn't very efficient, but most brute force programs aren't. TO DO: ALLOW FOR USER INPUT.
   Cryptography:
     A program that uses cryptography to analyze an encrypted message and decrypt it.
+    
