@@ -1,0 +1,39 @@
+#!/bin/sh
+
+testcount=0
+root=/tmp/$$
+dirs="d000 d777 d1775 d666"
+dir_ops="cd delete ls read search write"
+
+# create directories
+
+mkdir $root
+chmod 777 $root
+
+for dir in $dirs
+do
+    mkdir $root/$dir
+    prot="$(echo $dir | sed 's/^d//')"
+    chmod $prot $root/$dir
+done
+
+# directory tests
+for dir in $dirs
+do
+    for op in $dir_ops
+    do
+        cmd="./whocan $op $root/$dir"
+	echo "test $testcount: whocan $op $dir"
+	if $cmd 2>&1
+	then
+            echo "OK"
+	else
+	    echo "ERORR"
+	fi
+	echo
+	testcount=$(expr $testcount + 1)
+    done
+done
+# clean up
+chmod -R 777 $root 
+rm -rf $root

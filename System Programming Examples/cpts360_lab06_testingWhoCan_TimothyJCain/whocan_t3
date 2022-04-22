@@ -1,0 +1,117 @@
+#!/bin/sh
+
+testcount=0
+root=/tmp/$$
+dirs="d000 d777 d1775 d666"
+dir_ops="cd delete ls read search write"
+
+files="f600 f777 f000 f222"
+file_ops="execute ls read write"
+
+# create directories
+
+mkdir $root
+chmod 777 $root
+
+for dir in $dirs
+do
+    mkdir $root/$dir
+    prot="$(echo $dir | sed 's/^d//')"
+    chmod $prot $root/$dir
+done
+
+rm -rf new
+mkdir new
+
+# directory tests
+for dir in $dirs
+do
+    for op in $dir_ops
+    do
+        cmd="./whocan $op $root/$dir"
+	testOutputFile=$(printf "new/t%03d_%s_%s.out" $testcount $op $dir)
+	echo "test $testcount: whocan$op$dir" > $testOutputFile
+	echo > $testOutputFile
+	if $cmd 2>&1
+	then
+	    echo "OK"
+	else
+	    echo "ERORR"
+	fi >> $testOutputFile
+	testcount=$(expr $testcount + 1)
+    done
+done
+
+#create files
+
+for file in $files
+do
+    touch $root/$file
+    prot="$(echo $file | sed 's/^f//')"
+    chmod $prot $root/$file
+done
+
+#file tests
+
+for file in $files
+do
+    for file_op in $file_ops
+    do
+        cmd="./whocan $file_op $root/$file"
+		testOutputFile=$(printf "new/t%03d_%s_%s.out" $testcount $file_op $file)
+		echo "test $testcount: whocan$file_op$file" > $testOutputFile
+		echo > $testOutputFile
+	if $cmd 2>&1 | sed '/warning:/d'
+	then
+	    echo "OK"
+	else
+	    echo "ERROR"
+	fi >>$testOutputFile
+	testcount=$(expr $testcount + 1)
+    done
+done
+
+# clean up and start over
+chmod -R 777 $root
+rm -rf $root
+mkdir $root
+chmod 777 $root
+
+#create files *in* subdirectories of $root
+for dir in $dirs
+do
+    mkdir $root/$dir
+    for file in $files
+    do
+        touch $root/$dir/$file
+	prot="$(echo $file | sed 's/^f//')"
+	chmod $prot $root/$dir/$file
+    done
+    prot="$(echo $dir | sed 's/^d//')"
+    chmod $prot $root/$dir
+done
+
+#"file in directory tests"
+for dir in $dirs
+do
+    for file in $files
+    do
+        for file_op in $file_ops
+	do
+	    cmd="./whocan $file_op $root/$dir/$file"
+		testOutputFile=$(printf "new/t%03d_%s_%s_%s.out" $testcount $file_op $dir $file)
+	    echo "test $testcount: whocan$fileop$dir/$file" > $testOutputFile
+		echo > $testOutputFile
+	    if $cmd 2>&1
+	    then
+	        echo "OK"
+	    else 
+			echo "ERROR"
+	    fi >>$testOutputFile
+	    testcount=$(expr $testcount + 1)
+	done
+    done
+done
+# clean up
+chmod -R 777 $root 
+rm -rf $root
